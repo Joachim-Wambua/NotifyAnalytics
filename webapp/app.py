@@ -1,5 +1,6 @@
 from cProfile import label
 from socket import gaierror
+from tkinter import E, W
 from turtle import width, window_width
 import streamlit as st
 import pandas as pd
