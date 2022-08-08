@@ -11,8 +11,6 @@ numpy = "*"
 seaborn = "*"
 
 [dev-packages]
-libtk8.6-dev
-
 
 [requires]
 python_version = "3.9"
