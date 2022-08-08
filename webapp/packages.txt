@@ -1,2 +1,1 @@
-freeglut3-dev
-libgtk8.6-dev
+libgtk8.6
