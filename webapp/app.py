@@ -1,4 +1,3 @@
-from turtle import width, window_width
 import streamlit as st
 import pandas as pd
 import numpy as np
