@@ -12,8 +12,10 @@ from PIL import Image
 
 
 # Set Page Details
-st.set_page_config(page_title='NotifyAnalytics', page_icon=None, layout="wide", initial_sidebar_state="collapsed", menu_items=None)
+st.set_page_config(page_title='NotifyAnalytics', page_icon='statistics.png', layout="wide", initial_sidebar_state="collapsed", menu_items=None)
 st.title("NotifyAnalytics")
+
+
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -166,9 +168,11 @@ if __name__ == "__main__":
     d3.markdown('##### Applications with highest volume of High Priority Data')
     d3.write('Identifying the mobile applications responsible for sending the highest volume of high priority notifications i.e Notifications with __priority__ of +1 and +2.')
     d3.table(top_priority_notifiers)
-    
 
+    
+    # Plot
     # Row D
+    # connection_types = notifications.groupby('connectionType')['connectionType'].count()
     st.markdown('##### Sample Dataset Notifications')
     st.table(notifications[['appName', 'postTime', 'title','priority']].sample(20))
 
