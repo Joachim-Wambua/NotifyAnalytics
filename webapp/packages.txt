@@ -1,1 +1,1 @@
-libgtk8.6.so
+libgtk8.6
