@@ -5,15 +5,15 @@ import matplotlib.pyplot as plt
 import datetime
 import seaborn as sns
 from PIL import Image
+import os
 
+STYLE_URL = os.path.relpath("style.css")
 
 # Set Page Details
 st.set_page_config(page_title='NotifyAnalytics', page_icon='statistics.png', layout="wide", initial_sidebar_state="collapsed", menu_items=None)
-st.title("NotifyAnalytics")
+st.title("NotifyAnalytics") 
 
-
-
-with open('style.css') as f:
+with open(STYLE_URL) as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.sidebar.header("NotifyAnalytics")
